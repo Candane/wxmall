@@ -1,0 +1,38 @@
+<!--pages/detail/childComps/d-popup-info/d-popup-info.wxml-->
+<van-popup show="{{ showPopup }}" closeable position="bottom" custom-style="height: 70%" bind:close="onClose">
+  <view class="buy-header">
+    <view class="item-left">
+      <van-image width="220rpx" height="260rpx" src="{{buyGoodsInfo.masterImage}}"></van-image>
+    </view>
+    <view class="item-right">
+      <view class="price-info">
+        <text class='real-price'>{{'￥'+buyGoodsInfo.realPrice}}</text>
+        <text class='old-price'>{{'￥'+buyGoodsInfo.oldPrice}}</text>
+      </view>
+      <view class="sku-info">
+        <text>库存<block wx:if="{{currentIndex === null}}">{{buyGoodsInfo.skuCount}}</block><block wx:else>{{buyGoodsInfo.props[currentIndex].inventory}}</block>件
+        </text>
+      </view>
+      <view class="size-info">
+        <text>
+          <block wx:if="{{currentIndex === null}}">请选择尺码</block>
+          <block wx:else>已选择{{buyGoodsInfo.props[currentIndex].size}}码，{{count}}件</block>
+        </text>
+      </view>
+    </view>
+  </view>
+  <view class="buy-content">
+    <text class="size-title">尺码</text>
+    <view class="size-content">
+      <text wx:for="{{buyGoodsInfo.props}}" wx:key="index" class="{{currentIndex === index?'active':''}}" data-index="{{index}}" bindtap="sizeItemClick">{{item.size}}</text>
+    </view>
+  </view>
+  <text class="line"></text>
+  <view class="buy-count">
+    <text class="count-title">数量</text>
+    <van-stepper class="count-content" value="{{ prodoct_num }}" bind:change="onChange" min="1" max="20" integer/>
+  </view>
+  <view class="submit">
+    <van-button color="#e43130" size="large" bind:click="submit">确定</van-button>
+  </view>
+</van-popup>

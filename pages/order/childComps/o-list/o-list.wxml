@@ -1,0 +1,11 @@
+<!--pages/order/childComps/o-list/o-list.wxml-->
+<wxs src="../../../../wxs/format.wxs" module="format" />
+<view class="order" bindtap="orderClick">
+  <block wx:for="{{order.cartList}}" wx:key="_id">
+    <o-list-item goods="{{item}}"></o-list-item>
+  </block>
+  <view class="total clearfix">
+    <text class="total-content">　合计：{{'￥'+format.formatPrice(order.total_price)}}</text>
+    <text class="total-title">共{{order.cartList.length}}件商品 </text>
+  </view>
+</view>

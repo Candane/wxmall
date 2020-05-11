@@ -1,0 +1,7 @@
+<!--pages/profile/profile.wxml-->
+<view class='profile'>
+  <p-header hasUserInfo="{{hasUserInfo}}" userInfo="{{userInfo}}" bind:bindGetUserInfo="bindGetUserInfo"/>
+  <p-info/>
+  <p-list-view infos="{{profileList}}"/>
+  <p-list-view infos="{{serviceList}}"/>
+</view>

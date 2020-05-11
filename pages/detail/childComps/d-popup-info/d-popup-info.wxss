@@ -1,0 +1,88 @@
+/* pages/detail/childComps/d-popup-info/d-popup-info.wxss */
+
+.buy-header {
+  padding: 40rpx;
+}
+
+.item-left {
+  float: left;
+}
+
+.item-right {
+  float: left;
+  margin-left: 32rpx;
+  margin-top: 100rpx;
+}
+
+.price-info .real-price {
+  font-size: 44rpx;
+  color: #e43130;
+}
+
+.price-info .old-price {
+  margin-left: 14rpx;
+  font-size: 32rpx;
+  text-decoration: line-through;
+}
+
+.sku-info {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+
+.size-info {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+
+.buy-content {
+  clear: both;
+  padding:50rpx 40rpx 34rpx 40rpx;
+}
+
+.size-title {
+  font-size: 40rpx;
+}
+
+.size-content text {
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  float: left;
+  background: #f2f2f2;
+  text-align: center;
+  margin: 30rpx 20rpx 0 0;
+  font-size: 26rpx;
+  border-radius: 5px;
+}
+.line{
+  width: 95%;
+  height: 2rpx;
+  display: inline-block;
+  margin: 30rpx 0rpx 5rpx 0rpx;
+  background-color: #bbb;
+  text-align: center;
+}
+.buy-count{
+  clear: both;
+  padding:50rpx 40rpx 34rpx 40rpx;
+}
+.count-title{
+  float: left;
+  font-size: 40rpx;
+}
+.count-content{
+  float: right
+}
+.submit{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  width: 100%;
+  margin-top: 40rpx;
+}
+.active{
+  color:#fff;
+  background:#e64340!important;
+}

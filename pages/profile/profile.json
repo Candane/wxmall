@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "p-header":"./childComps/p-header/p-header",
+    "p-info":"./childComps/p-info/p-info",
+    "p-list-view":"./childComps/p-list-view/p-list-view"
+  }
+}

@@ -1,0 +1,14 @@
+<view class='param-info'>
+  <view class='header'>
+    <view class='start line'></view>
+    <view class='desc'>{{paramInfo.descript}}</view>
+    <view class='end line'></view>
+  </view>
+  <view class='content'>
+    <view class='title'>{{paramInfo.key}}</view>
+      <block wx:for="{{paramInfo.paramsImages}}" 
+             wx:key="index">
+        <image src="{{item}}" mode='widthFix' lazy-load/>
+      </block>
+  </view>
+</view>

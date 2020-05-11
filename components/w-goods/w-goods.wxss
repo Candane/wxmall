@@ -1,0 +1,24 @@
+/* components/w-goods/w-goods.wxss */
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 8rpx;
+  /* justify-content:space-evenly; */
+}
+
+.goods > .goods-item {
+  position: relative;
+}
+
+.goods > .goods-item {
+  width: 48%;
+  margin-top: 20rpx;
+}
+.goods > .reach-down{
+  text-align: center;
+  width: 100%;
+  line-height: 60rpx;
+  font-size:28rpx;
+  color:rgb(114,114,114);
+}

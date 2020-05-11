@@ -1,0 +1,66 @@
+/* pages/detail/childComps/d-base-info/d-base-info.wxss */
+.base-info{
+  margin-top: 24rpx;
+  padding: 0 14rpx;
+  color: #999;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+.title{
+  font-size: 32rpx;
+  color: #222;
+}
+.price-info{
+  margin-top: 20rpx;
+}
+.price-info .real-price{
+  margin-left: 16rpx;
+  font-size: 40rpx;
+  color:#e43130;
+}
+.price-info .old-price{
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  text-decoration: line-through;
+}
+.price-info .discount {
+  background: #e43130;
+  color: #fff;
+  margin-left: 16rpx;
+  padding: 4rpx 10rpx;
+  font-size: 24rpx;
+  border-radius: 14rpx;
+  position: relative;
+  bottom: 12rpx;
+}
+.sell-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  margin-top: 30rpx;
+  padding-bottom: 16rpx;
+  border-bottom: 1px solid rgba(200, 200, 200, .6);
+}
+.sell-item {
+  /* flex: 1; */
+  text-align: center;
+}
+.service {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  font-size: 24rpx;
+  padding: 30rpx 0;
+}
+
+.service .icon {
+  width: 24rpx;
+  height: 24rpx;
+  position: relative;
+  top: 2rpx;
+  right: 6rpx;
+}
+
+.service-item {
+  /* flex: 1; */
+  text-align: center;
+}

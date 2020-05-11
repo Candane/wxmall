@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "o-list-item": "../o-list-item/o-list-item"
+  }
+}

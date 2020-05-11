@@ -1,0 +1,19 @@
+/* pages/cart/cart.wxss */
+.cart {
+  height: 100%;
+}
+
+.cart-list {
+  height: calc(100% - 50px);
+}
+.tips {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4rpx solid #e43130;
+  padding: 20rpx;
+  font-size: 32rpx;
+  color: #000;
+  background: #fff;
+}

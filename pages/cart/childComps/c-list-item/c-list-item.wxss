@@ -1,0 +1,41 @@
+/* pages/cart/childComps/c-list-item/c-list-item.wxss */
+.check-custom-class {
+  padding-left: 20rpx;
+  border: 1px solid #eee;
+}
+.check-custom-class view.label-class {
+  margin-left: 0;
+}
+view.card-custom-class{
+  margin-left: 0;
+  padding-left: 0;
+}
+.card-custom-class .thumb-class{
+  margin-left: 0!important;
+  padding-left: 0!important;
+}
+.title-class,.desc-class{
+  width: 440rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goods-tags{
+  margin: 10rpx 0;
+}
+
+view.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  /* e43130 */
+  width: 45px;
+  color: #fff;
+  background-color: red;
+}
+.stepper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

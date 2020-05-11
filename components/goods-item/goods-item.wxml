@@ -1,0 +1,12 @@
+<!--components/goods-item/goods-item.wxml-->
+<wxs src="../../wxs/format.wxs" module="format"/>
+<view class='goods-item' bindtap='itemClick'>
+  <image class='image' src="{{goodsitem.master_image}}"  mode='widthFix' lazy-load/>
+  <view class='desc-info'>
+    <view class='title'>{{goodsitem.product_name}}</view>
+    <view class='info'>
+      <text class='price'>¥{{format.formatPrice(goodsitem.real_price)}}</text>
+      <text class='sales'>销量{{goodsitem.sales}}</text>
+    </view>
+  </view>
+</view>

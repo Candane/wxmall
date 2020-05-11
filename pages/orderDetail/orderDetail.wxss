@@ -1,0 +1,109 @@
+/* pages/orderDetail/orderDetail.wxss */
+
+.order-detail {
+  height: 100%;
+  background: #f8f8f8;
+}
+
+.tips {
+  background: #e43130;
+  height: 150rpx;
+  padding: 20rpx 40rpx;
+  color: #fff;
+  border-bottom: 8rpx solid #f8f8f8;
+}
+
+.header-title {
+  margin-top: 10rpx;
+}
+
+.header-time {
+  line-height: 2;
+  font-size: 30rpx;
+}
+
+.header-icon {
+  float: right;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  margin: 0 10rpx 20rpx;
+  padding: 30rpx 20rpx;
+  font-size: 30rpx;
+  color: #000;
+  height: 100rpx;
+  background: #fff;
+  line-height: 1.5;
+}
+
+.user-info .telephone {
+  font-size: 24rpx;
+  color: #817e7e;
+}
+
+.location-icon {
+  text-align: center;
+  margin: 0 14rpx;
+  width: 50rpx;
+}
+
+.order-goods {
+  margin-bottom: 20rpx;
+}
+
+.total {
+  background: #fff;
+  font-size: 30rpx;
+  color: #000;
+  padding-top: 20rpx;
+}
+
+.total-title {
+  display: inline-block;
+  margin-left: 30rpx;
+}
+
+.total-content {
+  float: right;
+  margin-right: 30rpx;
+}
+
+.order-info>view {
+  padding-left: 30rpx;
+  padding-bottom: 30rpx;
+  background: #fff;
+}
+
+.order-info .header {
+  padding-top: 30rpx;
+  font-size: 34rpx;
+  color: #000;
+}
+
+.header .header-info {
+ padding-left: 10rpx;
+  border-left: 6rpx #e43130 solid;
+}
+
+.order-info .item-left {
+  display: inline-block;
+  padding-left: 20rpx;
+  width: 160rpx;
+}
+
+.order-info text {
+  font-size: 24rpx;
+}
+
+.payment{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.payment .pay-button{
+  margin: 10rpx;
+  line-height: 2;
+   border-radius: 40rpx;
+}

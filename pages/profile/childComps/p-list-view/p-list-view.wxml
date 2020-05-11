@@ -1,0 +1,9 @@
+<!--pages/profile/childComps/p-list-view/p-list-view.wxml-->
+<view class='list-view'>
+  <block wx:for="{{infos}}" wx:key="index">
+    <view class='list-item'>
+      <van-icon name="{{item.icon}}" size="54rpx" class="item-icon"/>
+      <text>{{item.info}}</text>
+    </view>
+  </block>
+</view>

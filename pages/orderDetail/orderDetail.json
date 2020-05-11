@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "o-list-item":"./childComps/o-list-item/o-list-item"
+  },
+  "navigationBarTitleText": "订单详情"
+}

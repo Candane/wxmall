@@ -1,0 +1,10 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+  <view class="cate-header">
+    <van-search bind:search="searchEnter" placeholder="请输入商品名称搜索"></van-search>
+  </view>
+  <view class="cate-content">
+    <c-menu categories="{{categories}}" bind:menuclick="menuClick"></c-menu>
+    <c-content subcategories="{{categories[currentIndex].sub_category}}"></c-content>
+  </view>
+</view>

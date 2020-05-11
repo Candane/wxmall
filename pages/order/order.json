@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "o-header":"./childComps/o-header/o-header",
+    "o-list": "./childComps/o-list/o-list"
+  },
+  "navigationBarTitleText": "订单"
+}

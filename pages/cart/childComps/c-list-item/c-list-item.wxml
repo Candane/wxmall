@@ -1,0 +1,16 @@
+<!--pages/cart/childComps/c-list-item/c-list-item.wxml-->
+<view class='cart-list-item'>
+  <van-swipe-cell right-width="{{ 45 }}" async-close catch:close="onClose" data-index="{{index}}">
+    <van-checkbox label-class="label-class" value="{{goods.checked}}" custom-class="check-custom-class" bind:change="checkCick" data-index="{{index}}" checked-color="#e43130">
+      <van-card price="{{goods.realPrice}}" origin-price="{{goods.oldPrice}}" desc="{{goods.descript}}" title="{{goods.title}}" thumb="{{ goods.masterImage }}" title-class="title-class" desc-class="desc-class" custom-class="card-custom-class" thumb-class="thumb-class" lazy-load>
+        <view slot="tags" class="goods-tags">
+          <van-tag plain type="danger">{{goods.size}}</van-tag>
+        </view>
+        <view slot="bottom" class="stepper" catchtap='stopbubble'>
+          <van-stepper value="{{ goods.count }}" bind:change="numChange" data-index="{{index}}" data-stepper="{{true}}" min="1" max="20" integer/>
+        </view> 
+      </van-card>
+    </van-checkbox>
+    <view slot="right" class="delete">删除</view>
+  </van-swipe-cell>
+</view>

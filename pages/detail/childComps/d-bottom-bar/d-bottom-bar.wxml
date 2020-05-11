@@ -1,0 +1,21 @@
+<!--pages/detail/childComps/d-bottom-bar/d-bottom-bar.wxml-->
+<view class='bottom-bar'>
+  <view class='bar-left bar-item'>
+    <view class='left-item' bindtap='toHome'>
+      <van-icon name="chat-o" size="46rpx" class="icon"/>
+      <view>客服</view>
+    </view>
+    <view class='left-item' bindtap='toHome'>
+      <van-icon name="wap-home-o" size="46rpx" class="icon"/>
+      <view>首页</view>
+    </view>
+    <view class='left-item' bindtap="toCart">
+      <van-icon name="shopping-cart-o" size="46rpx" info="{{cartLength}}" class="icon"/>
+      <view>购物车</view>
+    </view>
+  </view>
+  <view class='bar-right bar-item'>
+    <view class='right-item cart' id="cart" bindtap='showPopup'>加入购物车</view>
+    <view class='right-item buy' id="buy" bindtap='showPopup'>立即购买</view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/cart/childComps/c-bottom-bar/c-bottom-bar.wxml-->
+<van-submit-bar price="{{ price*100 }}" button-text="提交订单" bind:submit="onClickButton">
+  <van-checkbox bind:change="allCheckCick" value="{{selected}}" checked-color="#e43130" class="submit-check">全选</van-checkbox>
+</van-submit-bar>

@@ -1,0 +1,25 @@
+<!--pages/profile/childComps/p-info/p-info.wxml-->
+<view class='info'>
+  <view class="info-header" bindtap="orderClick">
+    <text class="item-right">查看全部 ></text>
+    <text class="item-left">我的订单</text>
+  </view>
+  <view class="info-content">
+    <view class='info-order info-item'>
+      <van-icon name="pending-payment" size="60rpx"/>
+      <view>待付款</view>
+    </view>
+    <view class='info-pointer info-item'>
+      <van-icon name="tosend" size="60rpx"/>
+      <view>待发货</view>
+    </view>
+    <view class='info-pointer info-item'>
+      <van-icon name="logistics" size="60rpx"/>
+      <view>待收货</view>
+    </view>
+    <view class='info-pointer info-item'>
+      <van-icon name="comment-circle-o" size="60rpx"/>
+      <view>待评价</view>
+    </view>
+  </view>
+</view>

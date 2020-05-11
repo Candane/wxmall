@@ -1,0 +1,25 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+  <view class="header">
+    <van-search placeholder="输入商品名称搜索" bind:search="searchEnter"></van-search>
+  </view>
+  <block wx:if="{{isLoading}}">
+    <block wx:if="{{searchList.list.length !==0}}">
+      <scroll-view class="goods-list" scroll-y>
+        <view class="content">
+          <block wx:for="{{searchList.list}}" wx:key="_id">
+            <s-list-item goods="{{item}}"></s-list-item>
+          </block>
+        </view>
+      </scroll-view>
+    </block>
+    <block wx:else>
+      <view class="tips">
+        <view>
+          <van-icon name="smile-comment" color="#153be7" size="60rpx" />
+        </view>
+        <view>没有该类商品，换个方式重新搜索吧:)</view>
+      </view>
+    </block>
+  </block>
+</view>

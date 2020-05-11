@@ -1,0 +1,21 @@
+<!--pages/order/order.wxml-->
+<view class="order">
+  <o-header bind:onClick="onClick"></o-header>
+  <block wx:if="{{isLoading}}">
+    <block wx:if="{{orderList[currentType].list.length!==0}}">
+      <scroll-view class="order-list" scroll-y>
+        <block wx:for="{{orderList[currentType].list}}" wx:key="ordercode">
+          <o-list order="{{item}}"></o-list>
+        </block>
+      </scroll-view>
+    </block>
+    <block wx:else>
+      <view class="tips">
+        <view>
+          <van-icon name="smile-comment" color="#153be7" size="60rpx" />
+        </view>
+        <view>没有相关的订单，快去购物吧:)</view>
+      </view>
+    </block>
+  </block>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/order/childComps/o-header/o-header.wxml-->
+<van-tabs active="payment"  bind:change="onChange" swipeable>
+  <van-tab title="已完成" name="payment"></van-tab>
+  <van-tab title="待支付" name="unpaid"></van-tab>
+  <van-tab title="待发货" name="unfilled"></van-tab>
+  <van-tab title="待评价" name="evaluation"></van-tab>
+</van-tabs>

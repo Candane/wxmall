@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "w-swiper": "/components/w-swiper/w-swiper",
+    "d-base-info": "./childComps/d-base-info/d-base-info",
+    "d-param-info": "./childComps/d-param-info/d-param-info",
+    "d-bottom-bar": "./childComps/d-bottom-bar/d-bottom-bar",
+    "d-popup-info": "./childComps/d-popup-info/d-popup-info"
+  },
+  "navigationBarTitleText": "商品详情"
+}

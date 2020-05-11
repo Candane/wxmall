@@ -1,0 +1,6 @@
+<!--pages/order/childComps/o-list-item/o-list-item.wxml-->
+<van-card price="{{goods.product_price}}" title="{{goods.product_title}}" thumb="{{ goods.product_image }}" title-class="title-class" num="{{goods.product_num}}" custom-class="goods" lazy-load>
+  <view slot="tags" class="goods-tags">
+    码数:{{goods.product_size}}
+  </view>
+</van-card>

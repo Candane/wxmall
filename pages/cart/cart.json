@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+        "c-bottom-bar": "./childComps/c-bottom-bar/c-bottom-bar",
+        "c-list-item": "./childComps/c-list-item/c-list-item"
+  }
+}

@@ -1,0 +1,12 @@
+/* pages/order/childComps/o-list-item/o-list-item.wxss */
+view.goods {
+  background: #fff;
+}
+.goods-tags{
+  margin-top: 20rpx;
+}
+.title-class {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

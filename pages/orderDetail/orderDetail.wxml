@@ -1,0 +1,59 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<wxs src="../../wxs/format.wxs" module="format" />
+<view class="order-detail">
+  <view class="tips">
+    <van-icon name="shop-collect" color="#fff" size="100rpx" class="header-icon" />
+    <block wx:if="{{!orderInfo.pay_time}}">
+      <view class="header-title"> 等待买家付款</view>
+      <view class="header-time"> 剩23小时59分自动关闭</view>
+    </block>
+    <block wx:else>
+      <view class="header-title"> 购买成功</view>
+      <view class="header-time"> 订单已完成</view>
+    </block>
+  </view>
+  <view class="user-info">
+    <van-icon name="location" color="#e43130" size="50rpx" class="location-icon" />
+    <view>
+      <view>
+        <text>{{orderInfo.nickName}}</text>
+        <text class="telephone">15311423421</text>
+      </view>
+      <view>
+        广东省 广州市 华软软件学院
+      </view>
+    </view>
+  </view>
+  <view class="order-goods">
+    <block wx:for="{{orderInfo.cartList}}" wx:key="index">
+      <o-list-item goods="{{item}}"></o-list-item>
+    </block>
+    <view class="total">
+      <text class="total-title">商品总价</text>
+      <text class="total-content">{{'￥'+format.formatPrice(orderInfo.total_price)+'元'}}</text>
+    </view>
+  </view>
+  <view class="order-info">
+    <view class="header">
+      <view class="header-info">订单信息</view>
+    </view>
+    <view>
+      <text class="item-left">订单备注：</text>
+    </view>
+    <view>
+      <text class="item-left">订单编号：</text>
+      <text>{{orderInfo.ordercode}}</text>
+    </view>
+    <view>
+      <text class="item-left">创建时间：</text>
+      <text>{{format.formatDate(orderInfo.createTime||orderInfo.create_time)}}</text>
+    </view>
+    <view wx:if="{{orderInfo.pay_time}}">
+      <text class="item-left">成交时间：</text>
+      <text>{{format.formatDate(orderInfo.pay_time)}}</text>
+    </view>
+  </view>
+  <view class="payment" wx:if="{{!orderInfo.pay_time}}">
+    <button type="primary" class="pay-button" bindtap="submit" data-ordercode="{{orderInfo.ordercode}}">立即支付</button>
+  </view>
+</view>

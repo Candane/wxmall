@@ -1,0 +1,8 @@
+<!--pages/search/childComps/s-list-item/s-list-item.wxml-->
+<view bindtap="itemClick">
+  <van-card title="{{goods.product_name}}" price="{{goods.real_price}}" origin-price="{{goods.old_price}}" desc="{{goods.descript}}" thumb="{{ goods.master_image }}" title-class="title-class" desc-class="desc-class" custom-class="goods" lazy-load>
+    <view slot="tags" class="goods-sales">
+      销量：{{goods.sales}}
+    </view>
+  </van-card>
+</view>

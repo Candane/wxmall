@@ -1,0 +1,16 @@
+/* pages/order/order.wxss */
+.order-list{
+  height: calc(100% - 44px);
+  background: #dfd7d7;
+}
+.tips {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4rpx solid #153be7;
+  padding: 20rpx;
+  font-size: 32rpx;
+  color: #000;
+  background: #fff;
+}

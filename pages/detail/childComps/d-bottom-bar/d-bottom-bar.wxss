@@ -1,0 +1,48 @@
+/* pages/detail/childComps/d-bottom-bar/d-bottom-bar.wxss */
+.bottom-bar {
+  z-index: 9;
+  position: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 100rpx;
+  font-size: 30rpx;
+  box-shadow: 0 -1px 1px rgba(100, 100, 100, .2);
+  box-sizing: border-box;
+}
+
+.bar-item {
+  flex: 1;
+  display: flex;
+}
+.left-item, .right-item {
+  flex: 1;
+  text-align: center;
+}
+
+.left-item {
+  font-size: 22rpx;
+}
+
+.left-item image,.left-item .icon{
+  margin-top: 18rpx;
+}
+
+.left-item image {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.right-item {
+  line-height: 120rpx;
+  color: #fff;
+}
+
+.cart {
+  background: #ffb517;
+}
+
+.buy {
+  background: #e43130;
+}

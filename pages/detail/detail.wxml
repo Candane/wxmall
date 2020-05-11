@@ -1,0 +1,11 @@
+<!--pages/detail/detail.wxml-->
+<block wx:if="isLoading">
+  <scroll-view class='detail' scroll-y>
+    <w-swiper class='d-swiper' list="{{showImages}}" />
+    <d-base-info baseInfo="{{baseInfo}}"></d-base-info>
+    <d-param-info paramInfo="{{paramInfo}}"></d-param-info>
+  </scroll-view>
+</block>
+<d-popup-info showPopup="{{showPopup}}" buyGoodsInfo="{{buyGoodsInfo}}" btnObj="{{btnObj}}" bind:closePopup="closePopup"></d-popup-info>
+<d-bottom-bar bind:showPopup="showPopup"></d-bottom-bar>
+<van-toast id="van-toast" />

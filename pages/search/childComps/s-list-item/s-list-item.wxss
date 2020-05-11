@@ -1,0 +1,13 @@
+/* pages/search/childComps/s-list-item/s-list-item.wxss */
+.goods{
+  background: #fff;
+  margin: 6rpx 0;
+}
+.title-class,.desc-class{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goods-sales{
+  margin-top: 12rpx;
+}

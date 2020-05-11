@@ -1,0 +1,20 @@
+/* pages/order/childComps/o-list/o-list.wxss */
+.order {
+  background: #fff;
+  margin: 8rpx 0;
+}
+.order:first-child{
+  margin-top:0;
+}
+.total-title,.total-content {
+  float: right;
+  font-size: 30rpx;
+  color: #000;
+  padding: 30rpx 40rpx 30rpx 0;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,28 @@
+<!--pages/profile/childComps/p-header/p-header.wxml-->
+<view class='header'>
+  <block wx:if="{{hasUserInfo}}">
+    <view class='avatar'>
+      <image src="{{userInfo.avatarUrl}}" />
+    </view>
+    <view class='login-info'>
+      <view class='user-info'>{{userInfo.nickName}}</view>
+      <view class='login'>
+        <van-button type="primary" size="mini" round plain color="#e43130" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">更新资料</van-button>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='avatar'>
+      <image src="/assets/profile/avatar.png" />
+    </view>
+    <view class='login-info'>
+      <view class='user-info'>请登录~~~</view>
+      <view class='login'>
+        <van-button type="primary" size="mini" round plain color="#e43130" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</van-button>
+      </view>
+    </view>
+  </block>
+  <view class='arrow'>
+    <image src="/assets/common/arrow-right.png" />
+  </view>
+</view>

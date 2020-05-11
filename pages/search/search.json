@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "s-list-item":"./childComps/s-list-item/s-list-item"
+  },
+  "navigationBarTitleText": "搜索商品"
+}
