@@ -21,7 +21,7 @@
 
 ![搜索商品页](https://blog.candane.top/image/20200511153339.png)
 
-![购买窗口示例](https://blog.candane.top/image/20200511153701.png)
+![购买窗口示例](https://blog.candane.top/image/20200511153355.png)
 
 ![订单未付款](https://blog.candane.top/image/20200511153445.png)
 
