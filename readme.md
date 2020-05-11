@@ -17,7 +17,7 @@
 
 ![购物车列表](https://blog.candane.top/image/20200511153420.png)
 
-![登录示例](https://blog.candane.top/image/20200511153327.png)
+![登录](https://blog.candane.top/image/20200511153327.png)
 
 ![搜索商品页](https://blog.candane.top/image/20200511153339.png)
 
